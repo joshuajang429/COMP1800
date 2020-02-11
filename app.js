@@ -10,6 +10,8 @@ var myMovies = {
     
 };
 
+
+// this is the local storage portion
 if(localStorage.getItem("myMovies")) {
     myMovies = JSON.parse(localStorage.getItem("myMovies"));
     updateMovieHistory();
@@ -26,6 +28,8 @@ function clearMovies() {
     myMovieList.innerHTML = '';
 }
 
+
+// This is for updating the movie history in the html.
 function updateMovieHistory(movie) {
 
     var myTable= `
